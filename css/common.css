@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+body {
+    overflow-x: hidden;
+    background: #000;
+}
+
+/* loading */
+
+.wrapPosition {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    transition: 0.5s;
+    z-index: 999;
+}
+.layerPosition {
+    position: absolute;
+    top: 0px;
+
+    transition: 0.5s;
+    width: 50vw;
+    height: 100vh;
+    z-index: 999;
+}
+
+.upPosition {
+    left: 0;
+    background: #000;
+    z-index: 990;
+}
+.downPosition {
+    right: 0;
+    background: #000;
+    z-index: 990;
+}
+
+.layerTitle {
+    transition: 0.5s;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    line-height: 100vh;
+    color: #fff;
+    z-index: 998;
+}
+
+/* header */
+.site_header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.site_header > .headerMP4 {
+    min-width: 100%;
+    height: 100%;
+    /* pointer-events: none; */
+}
+
+/* logoText */
+.logoText {
+    top: 20%;
+    right: 14%;
+    position: absolute;
+    z-index: 700;
+
+    opacity: 0;
+    transition: 0.5s;
+    animation: upDown 1s 1s forwards;
+}
+
+.logoTitle {
+    color: #000;
+    font-size: 32px;
+
+    /* animation-name: cursor;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite; */
+}
+
+/* .logoTitle-txt {
+    color: #000;
+    font-size: 32px;
+    display: none;
+} */
+
+.logoP {
+    margin-left: 16px;
+    color: #000;
+    font-size: 24px;
+
+    opacity: 0;
+    animation: fadeIn 1s 2.5s forwards;
+}
+
+.logoSpan {
+    color: red;
+    font-weight: bold;
+}
+
+/*  */
+
+section {
+    width: 100%;
+    height: 700vh;
+}
+
+.manCiga {
+    position: -webkit-sticky;
+    top: 0;
+    position: sticky;
+}
+.man {
+    display: none;
+    min-width: 100vw;
+
+    height: 100%;
+}
+
+.man2 {
+    width: 150%;
+    height: 100vh;
+}
+
+.notCiga {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    overflow: hidden;
+}
+
+.notCiga > img {
+    min-width: 100vw;
+    height: 100vh;
+}
+
+.checkBox {
+    position: absolute;
+    padding: 40px;
+    width: 400px;
+    height: 400px;
+    left: 5%;
+    top: 5%;
+    background: #ffe48b;
+    box-shadow: 4px 5px 7px 5px #6d6c68;
+}
+
+form > input {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 80%;
+    padding: 4px;
+    height: 20px;
+    border-radius: 20px 0px 0px 20px;
+    border: 5px solid #fff;
+}
+
+form > button {
+    width: 10%;
+    height: 40px;
+    border-radius: 0px 20px 20px 0px;
+    border: 1px solid rgb(189, 181, 181);
+}
+
+form div {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.layer {
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    background: #000;
+}
+
+/* bar */
+.progress {
+    transition: 0.3s;
+    position: fixed;
+    width: 40px;
+    height: 270px;
+    top: 30%;
+    left: 5%;
+    background-image: url('../img/ciga.png');
+    background-size: cover;
+    z-index: 10;
+
+    opacity: 0;
+}
+.persent {
+    /* border-radius: 16px; */
+    transition: 0.3s;
+    opacity: 0;
+    position: absolute;
+    width: 40px;
+    /* min-height: 32px; */
+    height: 0;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url('../img/ciga_finally.png');
+    z-index: 11;
+}
+
+/* .bottomLayer {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: #000;
+    z-index: 300;
+} */
+
+/* cloud */
+
+.scrollText {
+    position: absolute;
+    color: #fff;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.img1 {
+    width: 400px;
+    height: 200px;
+    top: 300px;
+}
+.img2 {
+    width: 400px;
+    height: 200px;
+    top: 600px;
+    right: 0;
+}
+.img3 {
+    width: 400px;
+    height: 200px;
+    top: 300px;
+    right: 150px;
+}
+.img4 {
+    width: 400px;
+    height: 200px;
+    top: 300px;
+    left: 150px;
+}
+.img5 {
+    width: 400px;
+    height: 200px;
+    top: 700px;
+    left: 300px;
+}
+.img6 {
+    width: 400px;
+    height: 200px;
+    top: 700px;
+    right: 300px;
+}
+.img7 {
+    width: 400px;
+    height: 200px;
+    bottom: 200px;
+    left: 150px;
+}
+
+.fadeH2 {
+    position: absolute;
+    bottom: 25%;
+    color: #fff;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: 1s;
+    font-size: 22px;
+}
+
+@media (max-width: 900px) {
+    .man {
+        display: none;
+    }
+    .man2 {
+        display: block;
+    }
+}
+
+@media (min-width: 901px) {
+    .man2 {
+        display: none;
+    }
+    .man {
+        display: block;
+    }
+}
+
+@keyframes upDown {
+    0% {
+        margin-top: 35px;
+    }
+
+    100% {
+        margin-top: 70px;
+        opacity: 1;
+    }
+}
+
+@keyframes cursor {
+    0% {
+        border-right: 1px solid #fff;
+    }
+    50% {
+        border-right: 1px solid #000;
+    }
+    100% {
+        border-right: 1px solid #fff;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

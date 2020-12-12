@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.5.1/jquery.nicescroll.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="progress">
+        <span class="persent"></span>
+    </div>
+
+    <div class="wrapPosition">
+        <h2 class="layerTitle">청소년 여러분들,</h2>
+        <div class="layerPosition upPosition"></div>
+        <div class="layerPosition downPosition"></div>    
+    </div>
+
+    <div class="container">      
+        <header class="site_header">
+            <div class="layer"></div>
+            <div class="logoText">
+                <h1 class="logoTitle">이 모습이 멋져보이시나요?</h1>
+                <!-- <h1 class="logoTitle-txt"></h1> -->
+                <p class="logoP">흡연은 천천히 <span class="logoSpan">자살</span>하는 행위입니다.</p>
+            </div>
+            <img src="./img/ganzi.jpg" alt="smoked" class="headerMP4">
+
+            <!-- <video autoplay controls loop muted poster="aaa" preload="bbb" class="headerMP4">
+                <source src="./videos/ciga.mp4">
+            </video> -->
+        </header>
+
+        <section class="content">
+            <article class="manCiga">
+                <div class="cloud">
+                    <!-- <img src="./img/skull.jpg" alt="" class="img1"> -->
+                    <h1 class="scrollText img1">타들어갈수록 줄어드는 수명</h1>
+                    <h3 class="scrollText img2">성장기에 망가지는 폐</h3>
+                    <h2 class="scrollText img3">후두암 걸릴 확률↑</h2>
+                    <h4 class="scrollText img4">나이에 비해 빨리 오는 노안</h4>
+                    <h1 class="scrollText img5">가족에게 치명적인 간접 흡연</h1>
+                    <h3 class="scrollText img6">빠지지 않는 냄새</h3>
+                </div>
+
+                <img src="./img/smoke_man.jpg" alt="" class="man">
+                <img src="./img/smoke_man.jpg" alt="" class="man2">
+                <h2 class="fadeH2">"흡연은 절대 멋있지 않습니다."</h2>
+            </article>
+        </section>
+        <article class="notCiga">
+            <div class="bottomLayer"></div>
+            <div class="checkBox">
+                <form>
+                    <h1 style="font-size: 24px;">하루에 담배를 몇 개피 피시나요?</h1>
+                    <p style="color: gray;">*절대 기록에 남지 않습니다!</p>
+                    <p style="color: gray;">*청소년기- 늦지 않았습니다. 금연 보건소를 찾아가세요.</p>
+                    <input placeholder="ex) 5" class="inputData" /><button class="gapi">개피</button>
+                    <div class="resultBox">
+                        <div class="oneDay"></div>
+                        <div class="sevenDay"></div>
+                        <div class="monthDay"></div>
+                        <div class="oneYear"></div>
+                        <div class="tenYear"></div><br>
+                        <div class="resultWon"></div>
+                    </div>
+                </form>
+            </div>
+            <img src="./img/checklist.jpg" alt="doctor" class="doctorBg">
+        </article>
+    </div>
+</body>
+<script>
+
+    // setTimeout(() => {
+    //     var typingBool = false; 
+    //     var typingIdx=0; 
+    //     var typingTxt = $(".logoTitle").text().split(""); // 타이핑될 텍스트를 가져온다 
+    //     if(typingBool==false){ // 타이핑이 진행되지 않았다면 
+    //         typingBool=true;   
+    //         var tyInt = setInterval(typing,100); // 반복동작 
+    //     } 
+        
+    //     function typing(){ 
+                
+    //         if(typingIdx<typingTxt.length){ // 타이핑될 텍스트 길이만큼 반복 
+    //             $(".logoTitle-txt").append(typingTxt[typingIdx]); // 한글자씩 이어준다. 
+    //             typingIdx++; 
+    //         } else{ 
+    //             clearInterval(tyInt); //끝나면 반복종료 
+    //         } 
+    //     }        
+    //     }, 2000);
+
+</script>
+<script src="./js/main.js"></script>
+</html>
