@@ -94,6 +94,10 @@ window.addEventListener('scroll', (e) => {
     man2.style.opacity = per*0.008
     
 
+    // if(per>=10){
+    //     cloudWrap1.style.opacity='1'
+    // }
+
 
     if(per >= 18) {
         bar.style.opacity = "1"
@@ -152,4 +156,16 @@ $(".gapi").click(function(e) {
     $('.oneYear').html('<span>당신은 일 년에 <span style="font-weight:bold;">'+ result*365+ '</span>개피를 핍니다.</span>')
     $('.tenYear').html('<span>당신은 10년에 <span style="font-weight:bold;">'+ result*3650+ '</span>개피를 핍니다.</span>')
     $('.resultWon').html('<span>당신은 1년에 <span style="font-weight:bold;">'+ result*365/20*4500+ '</span>원을 담배에 씁니다.</span>')
+
+    setTimeout(() => {
+        const youtube_box = document.getElementsByClassName('youtube_box')[0]
+        youtube_box.style.display="block"
+    }, 2300);
+})
+
+$(".close").click(function(e){
+    e.preventDefault()
+
+    const youtube_box = document.getElementsByClassName('youtube_box')[0]
+    youtube_box.style.display="none"
 })

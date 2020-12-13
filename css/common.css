@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Nanum Myeongjo', serif;
+    scroll-behavior: none;
 }
 
 body {
@@ -73,7 +74,7 @@ body {
 
     opacity: 0;
     transition: 0.5s;
-    animation: upDown 1s 1s forwards;
+    animation: upDown 1s 2s forwards;
 }
 
 .logoTitle {
@@ -97,7 +98,7 @@ body {
     font-size: 24px;
 
     opacity: 0;
-    animation: fadeIn 1s 2.5s forwards;
+    animation: fadeIn 1s 3.5s forwards;
 }
 
 .logoSpan {
@@ -224,8 +225,11 @@ form div {
 /* cloud */
 
 .scrollText {
+    transition: 0.5s;
     position: absolute;
     color: #fff;
+
+    /* opacity: 0; */
 }
 
 h1 {
@@ -258,8 +262,8 @@ h4 {
 .img3 {
     width: 400px;
     height: 200px;
-    top: 300px;
-    right: 150px;
+    bottom: 200px;
+    right: 0px;
 }
 .img4 {
     width: 400px;
@@ -346,4 +350,42 @@ h4 {
     100% {
         opacity: 1;
     }
+}
+
+.youtube_box {
+    display: none;
+}
+
+.youtube_layer {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.7;
+    background: #000;
+}
+
+.close {
+    position: absolute;
+    margin: 40px;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 40px;
+    border: 1px solid gray;
+    background: gray;
+    transform: translate(-50%, -50%);
+    color: #ffff;
+    z-index: 999;
+}
+
+.youtube {
+    width: 60vw;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
